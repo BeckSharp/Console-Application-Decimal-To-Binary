@@ -6,7 +6,7 @@ namespace DecimalToBinary
     {
         static void Main(string[] args)
         {
-            int input = getInput();
+            int input = getInput();;
 
             string binary = decimalToBinary(input);
 
@@ -16,9 +16,16 @@ namespace DecimalToBinary
 
         static int getInput() 
         {
-            Console.WriteLine("Please enter a valid number to convert to binary:");
-            int input = Convert.ToInt32(Console.ReadLine());
-            return input;
+            try
+            {
+                Console.WriteLine("Please enter a valid number to convert to binary:");
+                int input = Convert.ToInt32(Console.ReadLine());
+                return input;
+            }
+            catch {
+                Console.WriteLine("Error occurred: Invalid input entered!");
+                return getInput();
+            }
         }
 
         static string decimalToBinary(int input) 
