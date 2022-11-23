@@ -10,7 +10,7 @@ namespace DecimalToBinary
 
             while (runProgram) 
             {
-                int input = getInput();;
+                int input = getInput();
 
                 string binary = decimalToBinary(input);
 
