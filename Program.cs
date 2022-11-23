@@ -6,11 +6,20 @@ namespace DecimalToBinary
     {
         static void Main(string[] args)
         {
-            int input = getInput();;
+            Boolean runProgram = true;
 
-            string binary = decimalToBinary(input);
+            while (runProgram) 
+            {
+                int input = getInput();;
 
-            Console.WriteLine(input + " converted to Binary is: " + binary);
+                string binary = decimalToBinary(input);
+
+                Console.WriteLine(input + " converted to Binary is: " + binary);
+
+                runProgram = convertAnotherNumber();
+            }
+
+            Console.WriteLine("Application Closed");
             Environment.Exit(0);
         }
 
@@ -39,6 +48,32 @@ namespace DecimalToBinary
             }
 
             return binary;
+        }
+
+        static Boolean convertAnotherNumber()
+        {
+            try
+            {
+                Console.WriteLine("Would you like to convert another number? (yes/no)");
+                string answer = Console.ReadLine().ToLower();
+
+                if (answer == "yes") { return true; }
+                
+                if (answer == "no") 
+                { 
+                    return false; 
+                } 
+                else 
+                { 
+                    Console.WriteLine("Error occurred: Please enter a valid answer!"); 
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error occurred: " + e);
+                return convertAnotherNumber();
+            }
+            return convertAnotherNumber();
         }
     }
 }
