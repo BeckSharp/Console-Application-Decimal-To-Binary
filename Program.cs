@@ -55,7 +55,8 @@ namespace DecimalToBinary
             try
             {
                 Console.WriteLine("Would you like to convert another number? (yes/no)");
-                string answer = Console.ReadLine().ToLower();
+                string? answer = Console.ReadLine();
+                if (answer != null) { answer = answer.ToLower(); }
 
                 if (answer == "yes") { return true; }
                 
