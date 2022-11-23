@@ -6,11 +6,19 @@ namespace DecimalToBinary
     {
         static void Main(string[] args)
         {
-            int input = 3684;
+            int input = getInput();
 
             string binary = decimalToBinary(input);
 
             Console.WriteLine(input + " converted to Binary is: " + binary);
+            Environment.Exit(0);
+        }
+
+        static int getInput() 
+        {
+            Console.WriteLine("Please enter a valid number to convert to binary:");
+            int input = Convert.ToInt32(Console.ReadLine());
+            return input;
         }
 
         static string decimalToBinary(int input) 
