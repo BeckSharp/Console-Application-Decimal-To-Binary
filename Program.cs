@@ -27,7 +27,7 @@ namespace DecimalToBinary
         {
             try
             {
-                Console.WriteLine("Please enter a valid number to convert to binary:");
+                Console.WriteLine("Please enter a valid positive integer to convert to binary:");
                 int input = Convert.ToInt32(Console.ReadLine());
                 return input;
             }
@@ -40,6 +40,8 @@ namespace DecimalToBinary
         static string decimalToBinary(int input) 
         {   
             string binary = "";
+
+            if (input == 0) { return "0"; }
 
             while (input > 0) 
             {

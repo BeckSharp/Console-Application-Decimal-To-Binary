@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tombe\\Desktop\\DecimalToBinary\\DecimalToBinary.csproj",
+      "projectUniqueName": "C:\\Users\\tombe\\Desktop\\Project\\DecimalToBinary\\DecimalToBinary.csproj",
       "projectName": "DecimalToBinary",
-      "projectPath": "C:\\Users\\tombe\\Desktop\\DecimalToBinary\\DecimalToBinary.csproj",
+      "projectPath": "C:\\Users\\tombe\\Desktop\\Project\\DecimalToBinary\\DecimalToBinary.csproj",
       "packagesPath": "C:\\Users\\tombe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tombe\\Desktop\\DecimalToBinary\\obj\\",
+      "outputPath": "C:\\Users\\tombe\\Desktop\\Project\\DecimalToBinary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\tombe\\AppData\\Roaming\\NuGet\\NuGet.Config"
