@@ -29,6 +29,9 @@ namespace DecimalToBinary
             {
                 Console.WriteLine("Please enter a valid positive integer to convert to binary:");
                 int input = Convert.ToInt32(Console.ReadLine());
+
+                if (input < 0) { throw  new Exception(); }
+                
                 return input;
             }
             catch {
