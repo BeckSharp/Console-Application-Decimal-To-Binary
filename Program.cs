@@ -39,10 +39,9 @@ namespace DecimalToBinary
 
         static string decimalToBinary(int input) 
         {   
-            string binary = "";
-
             if (input == 0) { return "0"; }
 
+            string binary = "";
             while (input > 0) 
             {
                 binary = (input % 2) + binary;
